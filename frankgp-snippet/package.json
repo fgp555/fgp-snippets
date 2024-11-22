@@ -1,0 +1,46 @@
+{
+  "version": "0.0.6",
+  "name": "frankgp",
+  "publisher": "frankgp",
+  "displayName": "Snippets por Frank GP",
+  "description": "Snippets personalizados creados por Frank GP (fgp)",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/html.json"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/css.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/jsx-snippets.code-snippets"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fgp555/vscode-extensions"
+  },
+  "homepage": "https://marketplace.visualstudio.com/items?itemName=frankgp.frankgp",
+  "feature": {
+    "details": "feature.md"
+  },
+  "icon": "images/logo.png"
+}

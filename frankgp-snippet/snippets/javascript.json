@@ -1,0 +1,19 @@
+{
+    "Print to console": {
+      "prefix": "log123",
+      "body": [
+        "console.log('$1');"
+      ],
+      "description": "Log output to console"
+    },
+    "Square function": {
+      "prefix": "squareFunc",
+      "body": [
+        "function square(number) {",
+        "  return number * number;",
+        "}"
+      ],
+      "description": "Function that calculates the square of a number"
+    }
+  }
+  
