@@ -1,9 +1,9 @@
 {
-  "version": "0.0.6",
+  "version": "2024.11.25",
   "name": "frankgp",
   "publisher": "frankgp",
-  "displayName": "Snippets por Frank GP",
-  "description": "Snippets personalizados creados por Frank GP (fgp)",
+  "displayName": "1st Snippets of Frank GP",
+  "description": "Custom snippets created by Frank GP (fgp)",
   "engines": {
     "vscode": "^1.95.0"
   },
@@ -31,6 +31,22 @@
       {
         "language": "javascriptreact",
         "path": "./snippets/jsx-snippets.code-snippets"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python.json"
+      },
+      {
+        "language": "http",
+        "path": "./snippets/http.json"
+      },
+      {
+        "language": "markdown",
+        "path": "./snippets/markdown.json"
+      },
+      {
+        "language": "ignore",
+        "path": "./snippets/gitignore.json"
       }
     ]
   },
