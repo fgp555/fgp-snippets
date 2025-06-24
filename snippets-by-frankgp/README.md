@@ -3,7 +3,7 @@
 Esta es una extensión que proporciona varios snippets personalizados.
 
 Plugin de Snippets para VSCode
-https://fgp.one/vscode-snippets
+https://fgp.one
 
 despues de instalar la extensión, en un archivo .jsx escribe: `fgp_react_todolist` y se genera el codigo para un todo list,
 con el tiempo ire actualizando con mas snippets.
@@ -14,7 +14,7 @@ con el tiempo ire actualizando con mas snippets.
 
 ## Web App para generar Snippets para extensión VSCode
 
-https://frankgp.com/app/snippet/vscode-extension
+https://frankgp.com
 
 ## Características
 

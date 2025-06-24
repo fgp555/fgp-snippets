@@ -1,0 +1,35 @@
+# Compiled object files, binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Output of go build
+/build/
+bin/
+*.o
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Dependency directories (go mod)
+vendor/
+
+# IDE/editor directories and files
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Coverage
+coverage.*
+*.coverprofile
+
+# MacOS
+.DS_Store

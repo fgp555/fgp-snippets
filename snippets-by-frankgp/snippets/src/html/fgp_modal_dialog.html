@@ -1,0 +1,16 @@
+<!-- Modal Trigger -->
+<button onclick="document.getElementById('modal').showModal()">Open Modal</button>
+
+<!-- Modal Dialog -->
+<dialog id="modal">
+  <article>
+    <header>
+      <a href="#close" aria-label="Close" class="close" onclick="document.getElementById('modal').close()"></a>
+      <h3>$1</h3>
+    </header>
+    <p>$2</p>
+    <footer>
+      <button onclick="document.getElementById('modal').close()">Close</button>
+    </footer>
+  </article>
+</dialog>

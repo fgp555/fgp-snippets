@@ -1,0 +1,15 @@
+/* === Desktop... === */
+@media (min-width: 40rem) {
+  body {
+    background-color: peru;
+  }
+}
+/* === Desktop... === */
+
+/* === Mobile... === */
+@media (max-width: 40rem) {
+  body {
+    background-color: crimson;
+  }
+}
+/* === Mobile... === */

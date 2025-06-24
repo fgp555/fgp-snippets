@@ -1,0 +1,35 @@
+/* Base styles */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles (toggle class) */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.toggle-dark-mode {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  margin: 1rem;
+}
+
+/* Optional dark mode button hover */
+.toggle-dark-mode:hover {
+  background-color: #555;
+}
+
+
+/* 
+<!-- Optional JavaScript toggle (in HTML) -->
+<button class="toggle-dark-mode" onclick="document.body.classList.toggle('dark-mode')">
+  Toggle Dark Mode
+</button>
+*/

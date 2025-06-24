@@ -1,5 +1,5 @@
 {
-  "version": "2024.11.25",
+  "version": "2025.6.6",
   "name": "frankgp",
   "publisher": "frankgp",
   "displayName": "1st Snippets of Frank GP",
@@ -7,46 +7,59 @@
   "engines": {
     "vscode": "^1.95.0"
   },
+  "scripts": {
+    "compile": "node scripts/compile-snippets.js",
+    "import": "node scripts/import-snippets.js",
+    "build": "npm run compile && npm run import"
+  },
   "categories": [
     "Snippets"
   ],
   "contributes": {
     "snippets": [
       {
-        "language": "html",
-        "path": "./snippets/snippets.code-snippets"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/javascript.json"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/html.json"
-      },
-      {
         "language": "css",
-        "path": "./snippets/css.json"
+        "path": "./snippets/compiled/css.code-snippets"
       },
       {
-        "language": "javascriptreact",
-        "path": "./snippets/jsx-snippets.code-snippets"
-      },
-      {
-        "language": "python",
-        "path": "./snippets/python.json"
+        "language": "html",
+        "path": "./snippets/compiled/html.code-snippets"
       },
       {
         "language": "http",
-        "path": "./snippets/http.json"
-      },
-      {
-        "language": "markdown",
-        "path": "./snippets/markdown.json"
+        "path": "./snippets/compiled/http.code-snippets"
       },
       {
         "language": "ignore",
-        "path": "./snippets/gitignore.json"
+        "path": "./snippets/compiled/ignore.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/compiled/javascript.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/compiled/javascriptreact.code-snippets"
+      },
+      {
+        "language": "markdown",
+        "path": "./snippets/compiled/markdown.code-snippets"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/compiled/python.code-snippets"
+      },
+      {
+        "language": "sql",
+        "path": "./snippets/compiled/sql.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/compiled/typescript.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/compiled/typescriptreact.code-snippets"
       }
     ]
   },

@@ -1,0 +1,44 @@
+/* Media Query: Mobile First */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
+
+/* Media Query: Tablets */
+@media (min-width: 601px) and (max-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 2rem;
+  }
+}
+
+/* Media Query: Desktop */
+@media (min-width: 993px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 3rem;
+  }
+}
+
+/* Media Query: Dark Mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+
+  a {
+    color: #90caf9;
+  }
+}
