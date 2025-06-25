@@ -10,6 +10,7 @@ if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
 const extensionsMap = {
   css: [".css"],
+  scss: [".scss"],
   html: [".html"],
   http: [".http"],
   javascript: [".js"],

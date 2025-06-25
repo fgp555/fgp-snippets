@@ -1,5 +1,5 @@
 {
-  "version": "2025.6.6",
+  "version": "2025.6.10",
   "name": "frankgp",
   "publisher": "frankgp",
   "displayName": "1st Snippets of Frank GP",
@@ -48,6 +48,10 @@
       {
         "language": "python",
         "path": "./snippets/compiled/python.code-snippets"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/compiled/scss.code-snippets"
       },
       {
         "language": "sql",

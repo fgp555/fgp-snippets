@@ -1,36 +1,34 @@
-# vscode-extensions
+# Snippets por Frank GP
 
-```sh
-# Instalar Yeoman y Generator de VS Code:
-npm install -g yo generator-code
-# Paso 2: Crear la extensión
-yo code
-# Paso 3: Definir los snippets
-# Paso 4: Probar la extensión
-# Presiona F5 para abrir una nueva ventana de VSCode con tu extensión cargada.
-# Paso 5: Empaquetar y publicar la extensión
-# Instalar vsce (Visual Studio Code Extension Manager):
-npm install -g vsce
-# Empaquetar la extensión:
-npm version patch && vsce package
+Esta es una extensión que proporciona varios snippets personalizados.
 
-vsce publish
+Plugin de Snippets para VSCode
+https://fgp.one
 
-# Publicar la extensión:
-# https://marketplace.visualstudio.com/
-# https://marketplace.visualstudio.com/items/?itemName=frankgp.frankgp
-# https://dev.azure.com/frankgp/_usersSettings/tokens
+despues de instalar la extensión, en un archivo .jsx escribe: `fgp_react_todolist` y se genera el codigo para un todo list,
+con el tiempo ire actualizando con mas snippets.
 
-# Manage Publishers & Extensions
-# https://marketplace.visualstudio.com/manage/publishers/frankgp?auth_redirect=True
-# https://marketplace.visualstudio.com/manage/publishers/frankgp/extensions/frankgp/hub
-```
+<!-- ![Logo de la extensión](https://i.postimg.cc/3RC1bQwF/SNIPPETS.jpg) -->
 
-# Developer: Show Running Extensions
+[![Web App para generar Snippets](https://i.postimg.cc/3RC1bQwF/SNIPPETS.jpg)](https://frankgp.com/app/snippet/vscode-extension)
 
-> Developer: Show Running Extensions
+## Web App para generar Snippets para extensión VSCode
 
-```sh
-# Compile the extension
-npm run compile
-```
+https://frankgp.com
+
+## Características
+
+- Snippets de JavaScript
+- Snippets de HTML
+- Y mucho más...
+
+# Mi Extensión de Snippets para VSCode
+
+Esta extensión proporciona una serie de **snippets** personalizados para mejorar tu flujo de trabajo en VSCode.
+
+## Snippets Disponibles
+
+### `React Snippets`
+
+- **Prefijo**: `fgp_react_todolist`
+- **Descripción**: Genera un todo list de React.
