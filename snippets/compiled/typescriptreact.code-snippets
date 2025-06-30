@@ -4,6 +4,23 @@
     "body": [
       "import \"./${TM_FILENAME_BASE}.css\";",
       "",
+      "const ${TM_FILENAME_BASE} = () => {",
+      "  return (",
+      "    <div>",
+      "      ${TM_FILENAME_BASE}",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "fgp_component snippet"
+  },
+  "fgp_component_props": {
+    "prefix": "fgp_component_props",
+    "body": [
+      "import \"./${TM_FILENAME_BASE}.css\";",
+      "",
       "interface ${TM_FILENAME_BASE}Props {",
       "  // props?: string;",
       "}",
@@ -16,7 +33,7 @@
       "",
       "export default ${TM_FILENAME_BASE};"
     ],
-    "description": "fgp_component snippet"
+    "description": "fgp_component_props snippet"
   },
   "fgp_component_structure": {
     "prefix": "fgp_component_structure",
