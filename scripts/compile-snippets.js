@@ -22,6 +22,7 @@ const extensionsMap = {
   typescriptreact: [".tsx"],
   json: [".json"],
   sql: [".sql"],
+  dart: [".dart"],
 };
 
 function toSnippetObject(filename, content) {

@@ -3,7 +3,7 @@ import "./${TM_FILENAME_BASE}.css";
 const ${TM_FILENAME_BASE} = () => {
   return (
     <div>
-      ${TM_FILENAME_BASE}
+        <h2>${TM_FILENAME_BASE}</h2>           
     </div>
   );
 };

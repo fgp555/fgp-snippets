@@ -22,6 +22,10 @@
         "path": "./snippets/compiled/css.code-snippets"
       },
       {
+        "language": "dart",
+        "path": "./snippets/compiled/dart.code-snippets"
+      },
+      {
         "language": "html",
         "path": "./snippets/compiled/html.code-snippets"
       },
