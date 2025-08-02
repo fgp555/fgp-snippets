@@ -104,15 +104,15 @@
     ],
     "description": "fgp_modal_dialog snippet"
   },
-  "fgp_pico_cdn": {
-    "prefix": "fgp_pico_cdn",
+  "fgp_picoCSS_cdn": {
+    "prefix": "fgp_picoCSS_cdn",
     "body": [
       "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css\" />"
     ],
-    "description": "fgp_pico_cdn snippet"
+    "description": "fgp_picoCSS_cdn snippet"
   },
-  "fgp_pico_template": {
-    "prefix": "fgp_pico_template",
+  "fgp_picoCSS_template": {
+    "prefix": "fgp_picoCSS_template",
     "body": [
       "<!DOCTYPE html>",
       "<html lang=\"es\" data-theme=\"light\">",
@@ -224,7 +224,7 @@
       "  </body>",
       "</html>"
     ],
-    "description": "fgp_pico_template snippet"
+    "description": "fgp_picoCSS_template snippet"
   },
   "fgp_Poster": {
     "prefix": "fgp_Poster",
