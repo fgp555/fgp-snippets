@@ -1,9 +1,9 @@
-import "./${TM_FILENAME_BASE}.css";
+// import "./${TM_FILENAME_BASE}.css";
 
-const ${TM_FILENAME_BASE} = () => {
+const ${1:${TM_FILENAME_BASE}} = () => {
   return (
-    <div>${TM_FILENAME_BASE}</div>
+    <div>${1:${TM_FILENAME_BASE}}</div>
   );
 };
 
-export default ${TM_FILENAME_BASE};
+export default ${1:${TM_FILENAME_BASE}};

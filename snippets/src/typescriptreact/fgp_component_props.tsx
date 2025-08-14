@@ -1,13 +1,13 @@
 import "./${TM_FILENAME_BASE}.css";
 
-interface ${TM_FILENAME_BASE}Props {
+interface ${1:${TM_FILENAME_BASE}}Props {
   // props?: string;
 }
 
-const ${TM_FILENAME_BASE}: React.FC<${TM_FILENAME_BASE}Props> = (props) => {
+const ${1:${TM_FILENAME_BASE}}: React.FC<${TM_FILENAME_BASE}Props> = (props) => {
   return (
-    <div>${TM_FILENAME_BASE}</div>
+    <div>${1:${TM_FILENAME_BASE}}</div>
   );
 };
 
-export default ${TM_FILENAME_BASE};
+export default ${1:${TM_FILENAME_BASE}};
