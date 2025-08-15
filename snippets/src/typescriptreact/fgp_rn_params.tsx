@@ -5,11 +5,11 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 const  ${1:${TM_FILENAME_BASE}}Params = () => {
-  const { ${2:userID} } = useLocalSearchParams();
+  const { ${2:id} } = useLocalSearchParams();
 
   return (
     <View style={styles.container}>
-      <Text> ${1:${TM_FILENAME_BASE}} {${2:userID}}</Text>
+      <Text> ${1:${TM_FILENAME_BASE}} {${2:id}}</Text>
     </View>
   );
 };

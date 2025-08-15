@@ -4,7 +4,7 @@ To publish your extension to the Visual Studio Marketplace, you need to follow t
 
 ```sh
 npm run build
-npm version patch 
+npm version patch
 vsce package
 vsce publish
 
