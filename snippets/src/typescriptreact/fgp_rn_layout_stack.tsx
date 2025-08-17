@@ -1,7 +1,7 @@
-// ${1:${TM_FILENAME_BASE}}.tsx
+// ${TM_FILENAME_BASE}.tsx
 
 import { Stack } from "expo-router";
 
-export default function ${1:App}Layout() {
+export default function $1Layout() {
   return <Stack />;
 }

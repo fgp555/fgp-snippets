@@ -1,4 +1,24 @@
 {
+  "fgp_readme_rn": {
+    "prefix": "fgp_readme_rn",
+    "body": [
+      "```sh",
+      "npm create-expo",
+      "",
+      "npx expo-router-sitemap",
+      "",
+      "npx expo start --clear",
+      "",
+      "```",
+      "",
+      "",
+      "Navigations & Layouts",
+      "",
+      "- params.tsx",
+      "- _layout.tsx"
+    ],
+    "description": "fgp_readme_rn snippet"
+  },
   "fgp_readme_structure": {
     "prefix": "fgp_readme_structure",
     "body": [
@@ -54,6 +74,56 @@
       "This project is licensed under the ${10:MIT} License."
     ],
     "description": "fgp_readme_structure snippet"
+  },
+  "fgp_rn_expo_router": {
+    "prefix": "fgp_rn_expo_router",
+    "body": [
+      "https://docs.expo.dev/router/installation/#setup-entry-point",
+      "",
+      "# Install Expo Router",
+      "",
+      "```sh",
+      "npx create-expo-app --template",
+      "",
+      "npx expo start",
+      "",
+      "npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar",
+      "```",
+      "",
+      "### package.json",
+      "",
+      "```json",
+      "{",
+      "  \"main\": \"expo-router/entry\"",
+      "}",
+      "```",
+      "",
+      "### app.json",
+      "",
+      "```json",
+      "{",
+      "  \"scheme\": \"your-app-scheme\"",
+      "}",
+      "```",
+      "",
+      "Rename `App.tsx` to `app/index.tsx` or `src/app/index.tsx`",
+      "",
+      "```tsx",
+      "// src/app/_layout.tsx",
+      "import { Stack } from \"expo-router\";",
+      "",
+      "export default function Layout() {",
+      "  return <Stack />;",
+      "}",
+      "```",
+      "",
+      "## Clear bundler cache",
+      "",
+      "```sh",
+      "npx expo start --clear",
+      "```"
+    ],
+    "description": "fgp_rn_expo_router snippet"
   },
   "fgp_todo_python": {
     "prefix": "fgp_todo_python",

@@ -1,4 +1,4 @@
-const GRAPHQL_ENDPOINT = "${1:http://localhost:4000/graphql}";
+const GRAPHQL_ENDPOINT = "\${1:http://localhost:4000/graphql}";
 
 export async function fetchGraphQL(query, variables = {}) {
   try {
@@ -6,7 +6,7 @@ export async function fetchGraphQL(query, variables = {}) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        // 'Authorization': `Bearer ${2:your_token}`
+        // 'Authorization': `Bearer \${2:your_token}`
       },
       body: JSON.stringify({
         query,
@@ -31,8 +31,8 @@ export async function fetchGraphQL(query, variables = {}) {
 
 // Ejemplo de uso:
 // const query = `
-//   query GetUser($id: ID!) {
-//     user(id: $id) {
+//   query GetUser(\$id: ID!) {
+//     user(id: \$id) {
 //       id
 //       name
 //       email

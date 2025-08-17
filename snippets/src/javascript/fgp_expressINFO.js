@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const PORT = 3000;
 
 app.get("/", (req, res) => {
   // Get the versions of Node.js and npm
@@ -24,6 +24,6 @@ app.get("/", (req, res) => {
   res.json(response);
 });
 
-app.listen(port, () => {
-  console.log(`Server listening at http://localhost:port`);
+app.listen(PORT, () => {
+  console.log(`Server listening at http://localhost:\${PORT}`);
 });

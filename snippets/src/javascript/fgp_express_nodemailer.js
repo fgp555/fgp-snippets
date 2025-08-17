@@ -53,7 +53,7 @@ app.get("/", (req, res) => {
 
 // Iniciar servidor
 app.listen(PORT, () => {
-  console.log(`Server listening on http://localhost:3000`);
+  console.log(`Server listening on http://localhost:\${PORT}`);
 });
 
 /* 

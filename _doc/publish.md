@@ -1,3 +1,5 @@
+<!-- https://chatgpt.com/c/68575091-fbac-8006-a6b7-af401ddd807e -->
+
 # Publish to Visual Studio Marketplace
 
 To publish your extension to the Visual Studio Marketplace, you need to follow these steps:
@@ -17,11 +19,15 @@ When defining snippets, you can use the `${TM_FILENAME_BASE}` variable to automa
 ```tsx
 $1
 
-use${1:CustomHook}
+use${1:MyHook}
 
-${1:userID}
+${1:MyName}
 
 ${TM_FILENAME_BASE}
 
  ${1:${TM_FILENAME_BASE}}
+
+ `\${day}/\${month}/\${year}`;
+
+${3:${1:${TM_FILENAME_BASE}}}
 ```

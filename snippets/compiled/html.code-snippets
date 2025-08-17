@@ -370,7 +370,7 @@
       "          });",
       "",
       "          const todoText = document.createElement(\"span\");",
-      "          todoText.textContent = ` ${todo.todo}`;",
+      "          todoText.textContent = `\\${todo.todo}`;",
       "          if (todo.done) {",
       "            todoText.classList.add(\"done\");",
       "          }",
