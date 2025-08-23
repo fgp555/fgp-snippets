@@ -1,0 +1,1 @@
+const { id } = useParams<{ id: string }>();

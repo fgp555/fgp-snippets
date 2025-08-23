@@ -77,6 +77,13 @@
     ],
     "description": "fgp_custom_hook snippet"
   },
+  "fgp_params": {
+    "prefix": "fgp_params",
+    "body": [
+      "const { id } = useParams<{ id: string }>();"
+    ],
+    "description": "fgp_params snippet"
+  },
   "fgp_rn_component": {
     "prefix": "fgp_rn_component",
     "body": [
