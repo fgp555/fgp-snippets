@@ -1,4 +1,4 @@
-import "./${TM_FILENAME_BASE}.css";
+// import "./${TM_FILENAME_BASE}.css";
 
 interface ${1:${TM_FILENAME_BASE}}Props {
   // props?: string;

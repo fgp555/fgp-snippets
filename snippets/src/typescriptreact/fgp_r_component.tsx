@@ -1,4 +1,4 @@
-import "./${TM_FILENAME_BASE}.css";
+// import "./${TM_FILENAME_BASE}.css";
 
 const ${1:${TM_FILENAME_BASE}} = () => {
   return (

@@ -1,89 +1,4 @@
 {
-  "fgp_component": {
-    "prefix": "fgp_component",
-    "body": [
-      "import \"./${TM_FILENAME_BASE}.css\";",
-      "",
-      "const ${1:${TM_FILENAME_BASE}} = () => {",
-      "  return (",
-      "    <div>",
-      "        <h2>${1:${TM_FILENAME_BASE}}</h2>           ",
-      "    </div>",
-      "  );",
-      "};",
-      "",
-      "export default ${1:${TM_FILENAME_BASE}};"
-    ],
-    "description": "fgp_component snippet"
-  },
-  "fgp_component_props": {
-    "prefix": "fgp_component_props",
-    "body": [
-      "import \"./${TM_FILENAME_BASE}.css\";",
-      "",
-      "interface ${1:${TM_FILENAME_BASE}}Props {",
-      "  // props?: string;",
-      "}",
-      "",
-      "const ${1:${TM_FILENAME_BASE}}: React.FC<${TM_FILENAME_BASE}Props> = (props) => {",
-      "  return (",
-      "    <div>${1:${TM_FILENAME_BASE}}</div>",
-      "  );",
-      "};",
-      "",
-      "export default ${1:${TM_FILENAME_BASE}};"
-    ],
-    "description": "fgp_component_props snippet"
-  },
-  "fgp_component_structure": {
-    "prefix": "fgp_component_structure",
-    "body": [
-      "import React from 'react';",
-      "",
-      "interface ${1:Props} {",
-      "  title?: string;",
-      "  description?: string;",
-      "}",
-      "",
-      "const ${2:ComponentName}: React.FC<$1> = ({ title = \"$3\", description = \"$4\" }) => {",
-      "  return (",
-      "    <div className=\"${5:wrapper}\">",
-      "      <h1>{title}</h1>",
-      "      <p>{description}</p>",
-      "    </div>",
-      "  );",
-      "};",
-      "",
-      "export default $2;"
-    ],
-    "description": "fgp_component_structure snippet"
-  },
-  "fgp_custom_hook": {
-    "prefix": "fgp_custom_hook",
-    "body": [
-      "import { useState, useEffect } from 'react';",
-      "",
-      "function use${1:CustomHook}<T>(initialValue: T): [T, React.Dispatch<React.SetStateAction<T>>] {",
-      "  const [value, setValue] = useState<T>(initialValue);",
-      "",
-      "  useEffect(() => {",
-      "    // Logic on mount or update",
-      "  }, [value]);",
-      "",
-      "  return [value, setValue];",
-      "}",
-      "",
-      "export default use${1:CustomHook};"
-    ],
-    "description": "fgp_custom_hook snippet"
-  },
-  "fgp_params": {
-    "prefix": "fgp_params",
-    "body": [
-      "const { id } = useParams<{ id: string }>();"
-    ],
-    "description": "fgp_params snippet"
-  },
   "fgp_rn_component": {
     "prefix": "fgp_rn_component",
     "body": [
@@ -2352,8 +2267,109 @@
     ],
     "description": "fgp_rn_params snippet"
   },
-  "fgp_state_management": {
-    "prefix": "fgp_state_management",
+  "fgp_r_component": {
+    "prefix": "fgp_r_component",
+    "body": [
+      "// import \"./${TM_FILENAME_BASE}.css\";",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "  return (",
+      "    <div>",
+      "        <h2>${1:${TM_FILENAME_BASE}}</h2>           ",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "fgp_r_component snippet"
+  },
+  "fgp_r_component_props": {
+    "prefix": "fgp_r_component_props",
+    "body": [
+      "// import \"./${TM_FILENAME_BASE}.css\";",
+      "",
+      "interface ${1:${TM_FILENAME_BASE}}Props {",
+      "  // props?: string;",
+      "}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}}: React.FC<${TM_FILENAME_BASE}Props> = (props) => {",
+      "  return (",
+      "    <div>${1:${TM_FILENAME_BASE}}</div>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "fgp_r_component_props snippet"
+  },
+  "fgp_r_component_structure": {
+    "prefix": "fgp_r_component_structure",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface ${1:Props} {",
+      "  title?: string;",
+      "  description?: string;",
+      "}",
+      "",
+      "const ${2:ComponentName}: React.FC<$1> = ({ title = \"$3\", description = \"$4\" }) => {",
+      "  return (",
+      "    <div className=\"${5:wrapper}\">",
+      "      <h1>{title}</h1>",
+      "      <p>{description}</p>",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default $2;"
+    ],
+    "description": "fgp_r_component_structure snippet"
+  },
+  "fgp_r_custom_hook": {
+    "prefix": "fgp_r_custom_hook",
+    "body": [
+      "import { useState, useEffect } from 'react';",
+      "",
+      "function use${1:CustomHook}<T>(initialValue: T): [T, React.Dispatch<React.SetStateAction<T>>] {",
+      "  const [value, setValue] = useState<T>(initialValue);",
+      "",
+      "  useEffect(() => {",
+      "    // Logic on mount or update",
+      "  }, [value]);",
+      "",
+      "  return [value, setValue];",
+      "}",
+      "",
+      "export default use${1:CustomHook};"
+    ],
+    "description": "fgp_r_custom_hook snippet"
+  },
+  "fgp_r_params": {
+    "prefix": "fgp_r_params",
+    "body": [
+      "// ${TM_FILENAME_BASE}.tsx",
+      "",
+      "import { useParams } from \"react-router-dom\";",
+      "// import \"./${1:${TM_FILENAME_BASE}}ParamsPage.css\";",
+      "",
+      "const ${1:${TM_FILENAME_BASE}}ParamsPage = () => {",
+      "  const { ${2:id} } = useParams();",
+      "",
+      "  return (",
+      "    <div className=\"user-details\">",
+      "      <h2>${1:${TM_FILENAME_BASE}}Params</h2>",
+      "      <p>${2:id}: {${2:id}}</p>",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}ParamsPage;"
+    ],
+    "description": "fgp_r_params snippet"
+  },
+  "fgp_r_state_management": {
+    "prefix": "fgp_r_state_management",
     "body": [
       "import React, { useState, useEffect } from 'react';",
       "",
@@ -2381,10 +2397,10 @@
       "",
       "export default $1;"
     ],
-    "description": "fgp_state_management snippet"
+    "description": "fgp_r_state_management snippet"
   },
-  "fgp_useEffect_fetch": {
-    "prefix": "fgp_useEffect_fetch",
+  "fgp_r_useEffect_fetch": {
+    "prefix": "fgp_r_useEffect_fetch",
     "body": [
       "import { useEffect, useState } from 'react';",
       "",
@@ -2421,10 +2437,10 @@
       "",
       "export default ${1:MyComponent};"
     ],
-    "description": "fgp_useEffect_fetch snippet"
+    "description": "fgp_r_useEffect_fetch snippet"
   },
-  "igb_comp_datepicker": {
-    "prefix": "igb_comp_datepicker",
+  "igb_rn_comp_datepicker": {
+    "prefix": "igb_rn_comp_datepicker",
     "body": [
       "import React, { useState } from \"react\";",
       "import { Dimensions, Modal, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from \"react-native\";",
@@ -2934,10 +2950,10 @@
       "",
       "export default App;"
     ],
-    "description": "igb_comp_datepicker snippet"
+    "description": "igb_rn_comp_datepicker snippet"
   },
-  "igb_comp_datepicker_screen": {
-    "prefix": "igb_comp_datepicker_screen",
+  "igb_rn_comp_datepicker_screen": {
+    "prefix": "igb_rn_comp_datepicker_screen",
     "body": [
       "import React, { useState } from \"react\";",
       "import { Dimensions, Modal, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from \"react-native\";",
@@ -3461,6 +3477,6 @@
       "      </View>",
       "*/"
     ],
-    "description": "igb_comp_datepicker_screen snippet"
+    "description": "igb_rn_comp_datepicker_screen snippet"
   }
 }
