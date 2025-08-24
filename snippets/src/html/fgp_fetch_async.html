@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fetch</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        display: grid;
+        place-items: center;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      }
+      pre {
+        width: min(100ch, 90vw);
+        max-height: 85vh;
+        overflow: auto;
+        border: 1px solid #8883;
+        border-radius: 12px;
+        padding: 16px;
+        box-shadow: 0 6px 20px #0001;
+        background: #00000008;
+      }
+      code {
+        white-space: pre;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <pre><code id="out">Cargando…</code></pre>
+
+    <script>
+      const apiURL = "https://jsonplaceholder.typicode.com/users";
+      const out = document.getElementById("out");
+
+      async function main() {
+        try {
+          const resp = await fetch(apiURL);
+          if (!resp.ok) throw new Error(`HTTP ${resp.status} ${resp.statusText}`);
+          const data = await resp.json();
+          out.textContent = JSON.stringify(data, null, 2);
+        } catch (err) {
+          out.textContent = `Error al obtener los datos: ${err.message}`;
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", main);
+    </script>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-fetch('${1:https://api.example.com/data}', {
+fetch('${1:https://jsonplaceholder.typicode.com/users}', {
     method: '${2:GET}', // GET, POST, PUT, DELETE
     headers: {
       'Content-Type': 'application/json',
