@@ -14,24 +14,6 @@
     ],
     "description": "fgp_component snippet"
   },
-  "fgp_component_structure": {
-    "prefix": "fgp_component_structure",
-    "body": [
-      "import React from 'react';",
-      "",
-      "const $1 = () => {",
-      "  return (",
-      "    <div className=\"$2\">",
-      "      <h1>$1</h1>",
-      "      <p>$3</p>",
-      "    </div>",
-      "  );",
-      "};",
-      "",
-      "export default $1;"
-    ],
-    "description": "fgp_component_structure snippet"
-  },
   "fgp_custom_hook": {
     "prefix": "fgp_custom_hook",
     "body": [
@@ -82,12 +64,35 @@
     ],
     "description": "fgp_state_management snippet"
   },
-  "fgp_useEffect_fetch": {
-    "prefix": "fgp_useEffect_fetch",
+  "fgp_use_api_fetch": {
+    "prefix": "fgp_use_api_fetch",
+    "body": [
+      "// import { useEffect, useState } from \"react\";",
+      "  const [data, setData] = useState([]);",
+      "",
+      "  useEffect(() => {",
+      "    const fetchData = async () => {",
+      "      try {",
+      "        const resp = await fetch(\"${1:https://jsonplaceholder.typicode.com/users}\");",
+      "        if (!resp.ok) throw new Error(`HTTP ${resp.status} ${resp.statusText}`);",
+      "        const json = await resp.json();",
+      "        setData(json);",
+      "      } catch (err) {",
+      "        console.error(err);",
+      "      }",
+      "    };",
+      "",
+      "    fetchData();",
+      "  }, []);"
+    ],
+    "description": "fgp_use_api_fetch snippet"
+  },
+  "fgp_use_api_fetch_component": {
+    "prefix": "fgp_use_api_fetch_component",
     "body": [
       "import { useEffect, useState } from 'react';",
       "",
-      "const ${1:MyComponent} = () => {",
+      "const ${1:FetchComponent} = () => {",
       "  const [${2:data}, set${3:Data}] = useState(null);",
       "  const [${4:loading}, set${5:Loading}] = useState(true);",
       "  const [${6:error}, set${7:Error}] = useState(null);",
@@ -119,9 +124,9 @@
       "  );",
       "};",
       "",
-      "export default ${1:MyComponent};"
+      "export default ${1:FetchComponent};"
     ],
-    "description": "fgp_useEffect_fetch snippet"
+    "description": "fgp_use_api_fetch_component snippet"
   },
   "igb_component_datepicker": {
     "prefix": "igb_component_datepicker",

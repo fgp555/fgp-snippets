@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const ${1:MyComponent} = () => {
+const ${1:FetchComponent} = () => {
   const [${2:data}, set${3:Data}] = useState(null);
   const [${4:loading}, set${5:Loading}] = useState(true);
   const [${6:error}, set${7:Error}] = useState(null);
@@ -32,4 +32,4 @@ const ${1:MyComponent} = () => {
   );
 };
 
-export default ${1:MyComponent};
+export default ${1:FetchComponent};
