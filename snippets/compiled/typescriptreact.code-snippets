@@ -2267,6 +2267,18 @@
     ],
     "description": "fgp_rn_params snippet"
   },
+  "fgp_rn_touch": {
+    "prefix": "fgp_rn_touch",
+    "body": [
+      "<Link href={`/user`} push asChild>",
+      "  <TouchableOpacity /* style={styles.transactionsButton} */>",
+      "    <MaterialIcons name=\"user\" size={18} color=\"#888\" />",
+      "    <Text /* style={styles.actionButtonText} */>user</Text>",
+      "  </TouchableOpacity>",
+      "</Link>;"
+    ],
+    "description": "fgp_rn_touch snippet"
+  },
   "fgp_r_component": {
     "prefix": "fgp_r_component",
     "body": [
