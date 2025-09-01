@@ -1,4 +1,11 @@
+# @USERS_EMAIL={{\$dotenv USERS_EMAIL}}
+# @USERS_PASSW={{\$dotenv USERS_PASSW}}
+# @ADMIN_EMAIL={{\$dotenv ADMIN_EMAIL}}
+# @ADMIN_PASSW={{\$dotenv ADMIN_PASSW}}
+# @ADMIN_TOKEN={{\$dotenv ADMIN_TOKEN}}
+# @token_system={{\$processEnv TOKEN}}
 @token={{\$dotenv TOKEN_ENV}}
+
 ### GET users
 # @name getUsers
 @headerContenType={{getUsers.response.headers.Content-Type}}

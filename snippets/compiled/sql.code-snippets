@@ -1,6 +1,28 @@
 {
-  "fgp_query": {
-    "prefix": "fgp_query",
+  "fgp_query1": {
+    "prefix": "fgp_query1",
+    "body": [
+      "SHOW DATABASES;",
+      "",
+      "USE ${1:progresar_db};",
+      "",
+      "SHOW TABLES;",
+      "",
+      "SELECT * FROM ${2:progresar_document_types};",
+      "",
+      "INSERT INTO ${2:progresar_document_types} (code, name)",
+      "VALUES ",
+      "  ('CC', 'Cédula de ciudadanía'),",
+      "  ('CE', 'Cédula de extranjería'),",
+      "  ('TI', 'Tarjeta de identidad'),",
+      "  ('NIT', 'Número de Identificación Tributaria'),",
+      "  ('PSP', 'Pasaporte'),",
+      "  ('PEP', 'Permiso Especial de Permanencia');"
+    ],
+    "description": "fgp_query1 snippet"
+  },
+  "fgp_query2": {
+    "prefix": "fgp_query2",
     "body": [
       "DROP DATABASE my_database;",
       "",
@@ -54,6 +76,6 @@
       "-- system clear",
       "-- system cls"
     ],
-    "description": "fgp_query snippet"
+    "description": "fgp_query2 snippet"
   }
 }

@@ -23,9 +23,9 @@ When defining snippets, you can use the `${TM_FILENAME_BASE}` variable to automa
 ```tsx
 $1
 
-use${1:MyHook}
+${1:progresar_document_types}
 
-${1:MyName}
+use${1:MyHook}
 
 ${TM_FILENAME_BASE}
 
