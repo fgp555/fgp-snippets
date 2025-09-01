@@ -15,7 +15,13 @@ vsce package
 vsce publish
 
 ```
-
+<!-- 
+para probar
+fgp_r_taildwind_test
+fgp_rn_taildwind_test
+fgp_r_pre_json
+fgp_rn_pre_json
+ -->
 # Variable for Snippet Filename
 
 When defining snippets, you can use the `${TM_FILENAME_BASE}` variable to automatically insert the base name of the current file. This is particularly useful for creating snippets that are context-aware and relevant to the file being edited.
@@ -23,9 +29,9 @@ When defining snippets, you can use the `${TM_FILENAME_BASE}` variable to automa
 ```tsx
 $1
 
-use${1:MyHook}
+${1:progresar_document_types}
 
-${1:MyName}
+use${1:MyHook}
 
 ${TM_FILENAME_BASE}
 

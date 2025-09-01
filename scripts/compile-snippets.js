@@ -10,19 +10,20 @@ if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
 const extensionsMap = {
   css: [".css"],
-  scss: [".scss"],
+  dart: [".dart"],
+  // docker: [".dockerfile", ".yml", ".yaml", ".dockerignore"], // 👈 nuevo
   html: [".html"],
   http: [".http"],
+  ignore: [".ignore"],
   javascript: [".js"],
   javascriptreact: [".jsx"],
+  json: [".json"],
   markdown: [".md"],
   python: [".py"],
-  typescript: [".ts"],
-  ignore: [".ignore"],
-  typescriptreact: [".tsx"],
-  json: [".json"],
+  scss: [".scss"],
   sql: [".sql"],
-  dart: [".dart"],
+  typescript: [".ts"],
+  typescriptreact: [".tsx"],
 };
 
 function toSnippetObject(filename, content) {

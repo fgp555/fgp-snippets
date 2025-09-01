@@ -3,7 +3,7 @@
 const ${1:${TM_FILENAME_BASE}} = () => {
   return (
     <div>
-        <h2>${1:${TM_FILENAME_BASE}}</h2>           
+        <h2>${1:${TM_FILENAME_BASE}}</h2>
     </div>
   );
 };

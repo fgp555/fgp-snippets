@@ -1,0 +1,21 @@
+@token={{\$dotenv TOKEN}}
+
+### GET
+GET http://127.0.0.1:3000
+
+### GET
+GET https://jsonplaceholder.typicode.com/users
+
+### POST
+POST https://jsonplaceholder.typicode.com/users
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    // .env file
+    "token": "{{token}}",
+    "dotenv_TOKEN": "{{\$dotenv TOKEN}}",
+    // System Variables
+    "USERNAME": "{{\$processEnv USERNAME}}",
+    "processEnv_TOKEN": "{{\$processEnv TOKEN}}"
+}

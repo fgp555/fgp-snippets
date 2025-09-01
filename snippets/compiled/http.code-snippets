@@ -37,6 +37,33 @@
     ],
     "description": "fgp_files snippet"
   },
+  "fgp_hello": {
+    "prefix": "fgp_hello",
+    "body": [
+      "@token={{\\$dotenv TOKEN}}",
+      "",
+      "### GET",
+      "GET http://127.0.0.1:3000",
+      "",
+      "### GET",
+      "GET https://jsonplaceholder.typicode.com/users",
+      "",
+      "### POST",
+      "POST https://jsonplaceholder.typicode.com/users",
+      "Authorization: Bearer {{token}}",
+      "Content-Type: application/json",
+      "",
+      "{",
+      "    // .env file",
+      "    \"token\": \"{{token}}\",",
+      "    \"dotenv_TOKEN\": \"{{\\$dotenv TOKEN}}\",",
+      "    // System Variables",
+      "    \"USERNAME\": \"{{\\$processEnv USERNAME}}\",",
+      "    \"processEnv_TOKEN\": \"{{\\$processEnv TOKEN}}\"",
+      "}"
+    ],
+    "description": "fgp_hello snippet"
+  },
   "fgp_rest_api": {
     "prefix": "fgp_rest_api",
     "body": [
@@ -109,7 +136,14 @@
   "fgp_variables": {
     "prefix": "fgp_variables",
     "body": [
+      "# @USERS_EMAIL={{\\$dotenv USERS_EMAIL}}",
+      "# @USERS_PASSW={{\\$dotenv USERS_PASSW}}",
+      "# @ADMIN_EMAIL={{\\$dotenv ADMIN_EMAIL}}",
+      "# @ADMIN_PASSW={{\\$dotenv ADMIN_PASSW}}",
+      "# @ADMIN_TOKEN={{\\$dotenv ADMIN_TOKEN}}",
+      "# @token_system={{\\$processEnv TOKEN}}",
       "@token={{\\$dotenv TOKEN_ENV}}",
+      "",
       "### GET users",
       "# @name getUsers",
       "@headerContenType={{getUsers.response.headers.Content-Type}}",

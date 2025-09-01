@@ -2267,6 +2267,40 @@
     ],
     "description": "fgp_rn_params snippet"
   },
+  "fgp_rn_pre_json": {
+    "prefix": "fgp_rn_pre_json",
+    "body": [
+      "<View>{JSON.stringify(${1:data}, null, 2)}</View>"
+    ],
+    "description": "fgp_rn_pre_json snippet"
+  },
+  "fgp_rn_taildwind_test": {
+    "prefix": "fgp_rn_taildwind_test",
+    "body": [
+      "import { View, Text, Pressable } from \"react-native\";",
+      "",
+      "export default function TailwindTestComponent() {",
+      "  return (",
+      "    <View className=\"flex-1 items-center justify-center bg-gray-100\">",
+      "      <View className=\"bg-white rounded-2xl p-6 shadow-md w-80\">",
+      "        <Text className=\"text-2xl font-bold text-gray-800 mb-2 text-center\">",
+      "          🚀 Hola Tailwind Native",
+      "        </Text>",
+      "        <Text className=\"text-gray-600 mb-4 text-center\">",
+      "          Si esto se ve estilizado, ¡TailwindCSS está funcionando en React Native!",
+      "        </Text>",
+      "        <Pressable className=\"bg-blue-600 p-3 rounded-lg active:bg-blue-700\">",
+      "          <Text className=\"text-white font-semibold text-center\">",
+      "            Probar Botón",
+      "          </Text>",
+      "        </Pressable>",
+      "      </View>",
+      "    </View>",
+      "  );",
+      "}"
+    ],
+    "description": "fgp_rn_taildwind_test snippet"
+  },
   "fgp_rn_touch": {
     "prefix": "fgp_rn_touch",
     "body": [
@@ -2287,7 +2321,7 @@
       "const ${1:${TM_FILENAME_BASE}} = () => {",
       "  return (",
       "    <div>",
-      "        <h2>${1:${TM_FILENAME_BASE}}</h2>           ",
+      "        <h2>${1:${TM_FILENAME_BASE}}</h2>",
       "    </div>",
       "  );",
       "};",
@@ -2380,6 +2414,13 @@
     ],
     "description": "fgp_r_params snippet"
   },
+  "fgp_r_pre_json": {
+    "prefix": "fgp_r_pre_json",
+    "body": [
+      "<pre>{JSON.stringify(${1:data}, null, 2)}</pre>"
+    ],
+    "description": "fgp_r_pre_json snippet"
+  },
   "fgp_r_state_management": {
     "prefix": "fgp_r_state_management",
     "body": [
@@ -2410,6 +2451,25 @@
       "export default $1;"
     ],
     "description": "fgp_r_state_management snippet"
+  },
+  "fgp_r_taildwind_test": {
+    "prefix": "fgp_r_taildwind_test",
+    "body": [
+      "export default function TailwindTestCard() {",
+      "  return (",
+      "    <div className=\"min-h-screen flex items-center justify-center bg-gray-100\">",
+      "      <div className=\"bg-white rounded-2xl shadow-lg p-6 max-w-sm w-full text-center\">",
+      "        <h1 className=\"text-2xl font-bold text-gray-800 mb-2\">🚀 Hola Tailwind</h1>",
+      "        <p className=\"text-gray-600 mb-4\">Si ves estilos bonitos, ¡TailwindCSS funciona!</p>",
+      "        <button className=\"px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition\">",
+      "          Probar Botón",
+      "        </button>",
+      "      </div>",
+      "    </div>",
+      "  );",
+      "}"
+    ],
+    "description": "fgp_r_taildwind_test snippet"
   },
   "fgp_r_useEffect_fetch": {
     "prefix": "fgp_r_useEffect_fetch",
