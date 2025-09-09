@@ -1,1 +1,1 @@
-<View>{JSON.stringify(${1:data}, null, 2)}</View>
+<Text>{JSON.stringify(${1:123}, null, 2)}</Text>
