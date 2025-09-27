@@ -268,8 +268,8 @@
     ],
     "description": "fgp_entity_service_sequelize snippet"
   },
-  "fgp_expressInfo": {
-    "prefix": "fgp_expressInfo",
+  "fgp_expressINFO": {
+    "prefix": "fgp_expressINFO",
     "body": [
       "const express = require(\"express\");",
       "const app = express();",
@@ -301,7 +301,7 @@
       "  console.log(`Server listening at http://localhost:\\${PORT}`);",
       "});"
     ],
-    "description": "fgp_expressInfo snippet"
+    "description": "fgp_expressINFO snippet"
   },
   "fgp_express_hello": {
     "prefix": "fgp_express_hello",

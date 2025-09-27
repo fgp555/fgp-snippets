@@ -1,6 +1,6 @@
 // ${TM_FILENAME_BASE}.tsx
 
-import { Text, View } from "react-native";
+import React, { Text, View } from "react-native";
 
 export default function ${1:${TM_FILENAME_BASE}}() {
   return (

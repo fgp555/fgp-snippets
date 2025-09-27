@@ -1,7 +1,7 @@
 // ${TM_FILENAME_BASE}.tsx
 
 import { Stack, useLocalSearchParams } from "expo-router";
-import { StyleSheet, Text, View } from "react-native";
+import React, { StyleSheet, Text, View } from "react-native";
 
 export default function ${1:${TM_FILENAME_BASE}}Params() {
   const { ${2:id} } = useLocalSearchParams();

@@ -5,9 +5,11 @@
 To publish your extension to the Visual Studio Marketplace, you need to follow these steps:
 
 ```sh
-vsce login frankgp
+npm install -g vsce
+
 # https://marketplace.visualstudio.com/manage/publishers
 # https://dev.azure.com/frankgp/_usersSettings/tokens
+vsce login frankgp
 
 npm run build
 npm version patch

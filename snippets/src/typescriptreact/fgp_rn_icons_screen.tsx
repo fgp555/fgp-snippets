@@ -1,5 +1,5 @@
 import { Link } from "expo-router";
-import { View, StyleSheet, Image, Text } from "react-native";
+import React, { View, StyleSheet, Image, Text } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import {
   AntDesign,

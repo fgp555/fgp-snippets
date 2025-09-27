@@ -2,7 +2,7 @@
 //  ${1:${TM_FILENAME_BASE}}.tsx
 
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import React, { StyleSheet, Text, View } from "react-native";
 
 export default function  ${1:${TM_FILENAME_BASE}}() {
   return (

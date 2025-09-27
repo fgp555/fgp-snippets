@@ -1,4 +1,4 @@
-import { View, Text, Pressable } from "react-native";
+import React, { View, Text, Pressable } from "react-native";
 
 export default function TailwindTestComponent() {
   return (
