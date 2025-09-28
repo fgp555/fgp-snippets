@@ -199,7 +199,7 @@
       "import * as Notifications from \"expo-notifications\";",
       "import { router } from \"expo-router\";",
       "import { useEffect, useState } from \"react\";",
-      "import { Platform } from \"react-native\";",
+      "import React, { Platform } from \"react-native\";",
       "",
       "if (!(globalThis as any)._hasSetNotificationHandler) {",
       "  Notifications.setNotificationHandler({",

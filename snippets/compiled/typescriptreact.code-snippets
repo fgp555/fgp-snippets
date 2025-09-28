@@ -4,7 +4,7 @@
     "body": [
       "// ${TM_FILENAME_BASE}.tsx",
       "",
-      "import { Text, View } from \"react-native\";",
+      "import React, { Text, View } from \"react-native\";",
       "",
       "export default function ${1:${TM_FILENAME_BASE}}() {",
       "  return (",
@@ -22,7 +22,7 @@
       "//  ${1:${TM_FILENAME_BASE}}.tsx",
       "",
       "import { StatusBar } from \"expo-status-bar\";",
-      "import { StyleSheet, Text, View } from \"react-native\";",
+      "import React, { StyleSheet, Text, View } from \"react-native\";",
       "",
       "export default function  ${1:${TM_FILENAME_BASE}}() {",
       "  return (",
@@ -74,7 +74,7 @@
     "prefix": "fgp_rn_icons_screen",
     "body": [
       "import { Link } from \"expo-router\";",
-      "import { View, StyleSheet, Image, Text } from \"react-native\";",
+      "import React, { View, StyleSheet, Image, Text } from \"react-native\";",
       "import Ionicons from \"@expo/vector-icons/Ionicons\";",
       "import {",
       "  AntDesign,",
@@ -809,7 +809,7 @@
       "// ${TM_FILENAME_BASE}.tsx",
       "",
       "import { Slot, usePathname } from \"expo-router\";",
-      "import { StatusBar } from \"react-native\";",
+      "import React, { StatusBar } from \"react-native\";",
       "import { GestureHandlerRootView } from \"react-native-gesture-handler\";",
       "",
       "export default function RootLayout() {",
@@ -2242,7 +2242,7 @@
       "// ${TM_FILENAME_BASE}.tsx",
       "",
       "import { Stack, useLocalSearchParams } from \"expo-router\";",
-      "import { StyleSheet, Text, View } from \"react-native\";",
+      "import React, { StyleSheet, Text, View } from \"react-native\";",
       "",
       "export default function ${1:${TM_FILENAME_BASE}}Params() {",
       "  const { ${2:id} } = useLocalSearchParams();",
@@ -2277,7 +2277,7 @@
   "fgp_rn_taildwind_test": {
     "prefix": "fgp_rn_taildwind_test",
     "body": [
-      "import { View, Text, Pressable } from \"react-native\";",
+      "import React, { View, Text, Pressable } from \"react-native\";",
       "",
       "export default function TailwindTestComponent() {",
       "  return (",
