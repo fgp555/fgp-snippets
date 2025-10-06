@@ -132,5 +132,24 @@
       "    app.run(debug=True)"
     ],
     "description": "fgp_flask_todo snippet"
+  },
+  "fgp_hello": {
+    "prefix": "fgp_hello",
+    "body": [
+      "print(\"Hello, World!\")",
+      "",
+      "",
+      "# python --version",
+      "# python hello.py",
+      "# Hello, World!",
+      "",
+      "# python -m venv venv",
+      "# source venv/Scripts/activate",
+      "# deactivate",
+      "",
+      "# Dentro del intérprete interactivo de Python (la consola de Python).",
+      "# exit()"
+    ],
+    "description": "fgp_hello snippet"
   }
 }
