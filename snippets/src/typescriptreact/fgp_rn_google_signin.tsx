@@ -1,4 +1,4 @@
-// OAuthGoogleSigIn.tsx
+// ${1:${TM_FILENAME_BASE}}.tsx
 import {
   GoogleSignin,
   isErrorWithCode,
@@ -11,12 +11,12 @@ import { Button, Image, ScrollView, Text, View } from "react-native";
 
 // ⚙️ Google Sign-In configuration
 GoogleSignin.configure({
-  webClientId: "xxx.apps.googleusercontent.com",
-  iosClientId: "xxx.apps.googleusercontent.com",
+  webClientId: "${2:xxx.apps.googleusercontent.com}",
+  iosClientId: "${3:xxx.apps.googleusercontent.com}",
   offlineAccess: true,
 });
 
-export default function OAuthGoogleSigIn() {
+export default function ${1:${TM_FILENAME_BASE}}() {
   const [userInfo, setUserInfo] = useState<User | null>(null);
   const [loading, setLoading] = useState(false);
   const [logText, setLogText] = useState<string>("🪵 Logs will appear here");
@@ -24,7 +24,7 @@ export default function OAuthGoogleSigIn() {
   // 🔹 Append logs to on-screen log box
   const appendLog = (label: string, data: any) => {
     const json = JSON.stringify(data, Object.getOwnPropertyNames(data), 2);
-    setLogText((prev) => `prev\n\nlabel:\njson`);
+    setLogText((prev) => `\${prev}\n\n\${label}:\n\${json}`);
   };
 
   // Check for an existing session

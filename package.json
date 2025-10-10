@@ -1,8 +1,8 @@
 {
-  "version": "2025.10.6",
+  "version": "2025.10.8",
   "name": "frankgp",
   "publisher": "frankgp",
-  "displayName": "1st Snippets of Frank GP",
+  "displayName": ".FGP Snippets by Frank GP",
   "description": "Custom snippets created by Frank GP (fgp)",
   "engines": {
     "vscode": "^1.95.0"
