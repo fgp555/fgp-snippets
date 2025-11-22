@@ -342,6 +342,28 @@
     ],
     "description": "fgp_img snippet"
   },
+  "fgp_metadata_seo": {
+    "prefix": "fgp_metadata_seo",
+    "body": [
+      "<meta charset=\"UTF-8\" />",
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
+      "<meta name=\"description\" content=\"$1\" />",
+      "<meta name=\"keywords\" content=\"$2\" />",
+      "<meta name=\"author\" content=\"FGP Team\" />",
+      "<meta name=\"robots\" content=\"index, follow\" />",
+      "<meta property=\"og:title\" content=\"$3\" />",
+      "<meta property=\"og:description\" content=\"$4\" />",
+      "<meta property=\"og:image\" content=\"$5\" />",
+      "<meta property=\"og:url\" content=\"$6\" />",
+      "<meta property=\"og:type\" content=\"website\" />",
+      "<link rel=\"canonical\" href=\"$7\" />",
+      "",
+      "<meta property=\"og:image\" content=\"https://i.postimg.cc/mDyMcztp/fb-cover.png\" />",
+      "<meta property=\"og:image:width\" content=\"600\" />",
+      "<meta property=\"og:image:height\" content=\"314\" />"
+    ],
+    "description": "fgp_metadata_seo snippet"
+  },
   "fgp_modal_dialog": {
     "prefix": "fgp_modal_dialog",
     "body": [
@@ -492,24 +514,6 @@
       "<meta property=\"og:image\" content=\"https://i.postimg.cc/fbwLF9Ft/fb-cover-vscode-shortcode.webp\" />"
     ],
     "description": "fgp_Poster snippet"
-  },
-  "fgp_seo_meta": {
-    "prefix": "fgp_seo_meta",
-    "body": [
-      "<meta charset=\"UTF-8\" />",
-      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
-      "<meta name=\"description\" content=\"$1\" />",
-      "<meta name=\"keywords\" content=\"$2\" />",
-      "<meta name=\"author\" content=\"FGP Team\" />",
-      "<meta name=\"robots\" content=\"index, follow\" />",
-      "<meta property=\"og:title\" content=\"$3\" />",
-      "<meta property=\"og:description\" content=\"$4\" />",
-      "<meta property=\"og:image\" content=\"$5\" />",
-      "<meta property=\"og:url\" content=\"$6\" />",
-      "<meta property=\"og:type\" content=\"website\" />",
-      "<link rel=\"canonical\" href=\"$7\" />"
-    ],
-    "description": "fgp_seo_meta snippet"
   },
   "fgp_tailwind": {
     "prefix": "fgp_tailwind",
