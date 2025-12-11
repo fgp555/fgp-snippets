@@ -1,4 +1,47 @@
 {
+  "fgp_404": {
+    "prefix": "fgp_404",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"es\">",
+      "  <head>",
+      "    <meta charset=\"utf-8\" />",
+      "    <title>404 - Página no encontrada</title>",
+      "    <style>",
+      "      body {",
+      "        font-family: Arial, sans-serif;",
+      "        text-align: center;",
+      "        padding: 80px;",
+      "        background: #f5f5f5;",
+      "        color: #333;",
+      "      }",
+      "      h1 {",
+      "        font-size: 48px;",
+      "        margin-bottom: 10px;",
+      "      }",
+      "      p {",
+      "        font-size: 18px;",
+      "        margin-bottom: 20px;",
+      "      }",
+      "      a {",
+      "        color: #0077cc;",
+      "        text-decoration: none;",
+      "        font-weight: bold;",
+      "      }",
+      "      a:hover {",
+      "        text-decoration: underline;",
+      "      }",
+      "    </style>",
+      "  </head>",
+      "  <body>",
+      "    <h1>404</h1>",
+      "    <p>La página que buscas no existe.</p>",
+      "    <a href=\"/\">Volver al inicio</a>",
+      "  </body>",
+      "</html>"
+    ],
+    "description": "fgp_404 snippet"
+  },
   "fgp_api_axios.async": {
     "prefix": "fgp_api_axios.async",
     "body": [
@@ -514,6 +557,24 @@
       "<meta property=\"og:image\" content=\"https://i.postimg.cc/fbwLF9Ft/fb-cover-vscode-shortcode.webp\" />"
     ],
     "description": "fgp_Poster snippet"
+  },
+  "fgp_redirect": {
+    "prefix": "fgp_redirect",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"es\">",
+      "  <head>",
+      "    <meta charset=\"utf-8\" />",
+      "    <meta http-equiv=\"refresh\" content=\"0;url=https://frankgp.com/\" />",
+      "    <title>Redirigiendo…</title>",
+      "  </head>",
+      "  <body>",
+      "    Si no eres redirigido automáticamente, haz clic aquí:",
+      "    <a href=\"https://frankgp.com/\">Ir a frankgp.com</a>",
+      "  </body>",
+      "</html>"
+    ],
+    "description": "fgp_redirect snippet"
   },
   "fgp_tailwind": {
     "prefix": "fgp_tailwind",

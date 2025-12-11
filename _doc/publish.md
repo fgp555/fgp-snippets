@@ -12,7 +12,7 @@ npm install -g vsce
 vsce login frankgp
 
 npm version patch
-npm run build 
+npm run build
 vsce package
 vsce publish
 
