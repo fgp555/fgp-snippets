@@ -1,34 +1,21 @@
 {
-  "fgp_query1": {
-    "prefix": "fgp_query1",
+  "fgp_create_database": {
+    "prefix": "fgp_create_database",
     "body": [
-      "SHOW DATABASES;",
-      "",
-      "USE ${1:progresar_db};",
-      "",
-      "SHOW TABLES;",
-      "",
-      "SELECT * FROM ${2:progresar_document_types};",
-      "",
-      "INSERT INTO ${2:progresar_document_types} (code, name)",
-      "VALUES ",
-      "  ('CC', 'Cédula de ciudadanía'),",
-      "  ('CE', 'Cédula de extranjería'),",
-      "  ('TI', 'Tarjeta de identidad'),",
-      "  ('NIT', 'Número de Identificación Tributaria'),",
-      "  ('PSP', 'Pasaporte'),",
-      "  ('PEP', 'Permiso Especial de Permanencia');"
+      "CREATE DATABASE ${1:my_database} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
     ],
-    "description": "fgp_query1 snippet"
+    "description": "fgp_create_database snippet"
   },
-  "fgp_query2": {
-    "prefix": "fgp_query2",
+  "fgp_crud_database": {
+    "prefix": "fgp_crud_database",
     "body": [
-      "DROP DATABASE my_database;",
+      "DROP DATABASE ${1:my_database};",
       "",
-      "CREATE DATABASE my_database;",
+      "CREATE DATABASE ${1:my_database} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;",
       "",
-      "USE my_database;",
+      "CREATE DATABASE ${1:my_database};",
+      "",
+      "USE ${1:my_database};",
       "",
       "SHOW DATABASES;",
       "",
@@ -67,7 +54,7 @@
       "host: \"localhost\",",
       "user: \"root\",",
       "password: \"\",",
-      "database: \"my_database\",",
+      "database: \"${1:my_database}\",",
       "});",
       "",
       "*/",
@@ -76,6 +63,6 @@
       "-- system clear",
       "-- system cls"
     ],
-    "description": "fgp_query2 snippet"
+    "description": "fgp_crud_database snippet"
   }
 }

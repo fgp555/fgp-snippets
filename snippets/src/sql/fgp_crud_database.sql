@@ -1,8 +1,10 @@
-DROP DATABASE my_database;
+DROP DATABASE ${1:my_database};
 
-CREATE DATABASE my_database;
+CREATE DATABASE ${1:my_database} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-USE my_database;
+CREATE DATABASE ${1:my_database};
+
+USE ${1:my_database};
 
 SHOW DATABASES;
 
@@ -41,7 +43,7 @@ const db = mysql.createConnection({
 host: "localhost",
 user: "root",
 password: "",
-database: "my_database",
+database: "${1:my_database}",
 });
 
 */
