@@ -1,5 +1,7 @@
-### CREATE USER
-POST http://localhost:${1:3000}/users
+@userId=1
+
+### CREATE
+POST http://localhost:${1:3000}/${2:users}
 Content-Type: application/json
 
 {
@@ -7,14 +9,14 @@ Content-Type: application/json
   "email": "user123@test.com"
 }
 
-### READ ALL USERS
-GET http://localhost:${1:3000}/users
+### READ ALL
+GET http://localhost:${1:3000}/${2:users}
 
-### READ ONE USER
-GET http://localhost:${1:3000}/users/1
+### READ ONE
+GET http://localhost:${1:3000}/${2:users}/{{userId}}
 
-### UPDATE USER
-PUT http://localhost:${1:3000}/users/1
+### UPDATE
+PUT http://localhost:${1:3000}/${2:users}/{{userId}}
 Content-Type: application/json
 
 {
@@ -22,5 +24,5 @@ Content-Type: application/json
   "email": "user123update@test.com"
 }
 
-### DELETE USER
-DELETE http://localhost:${1:3000}/users/1
+### DELETE
+DELETE http://localhost:${1:3000}/${2:users}/{{userId}}
