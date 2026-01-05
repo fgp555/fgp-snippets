@@ -42,30 +42,8 @@
     ],
     "description": "fgp_config_typeorm snippet"
   },
-  "fgp_entity": {
-    "prefix": "fgp_entity",
-    "body": [
-      "import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';",
-      "",
-      "@Entity()",
-      "export class EntityName {",
-      "  @PrimaryGeneratedColumn()",
-      "  id: number;",
-      "",
-      "  @Column()",
-      "  name: string;",
-      "",
-      "  @Column({ nullable: true })",
-      "  description?: string;",
-      "",
-      "  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })",
-      "  createdAt: Date;",
-      "}"
-    ],
-    "description": "fgp_entity snippet"
-  },
-  "fgp_entity_controller": {
-    "prefix": "fgp_entity_controller",
+  "fgp_module_controller": {
+    "prefix": "fgp_module_controller",
     "body": [
       "import { Request, Response } from \"express\";",
       "",
@@ -98,10 +76,32 @@
       "",
       "export default new $1Controller();"
     ],
-    "description": "fgp_entity_controller snippet"
+    "description": "fgp_module_controller snippet"
   },
-  "fgp_entity_routes": {
-    "prefix": "fgp_entity_routes",
+  "fgp_module_entity": {
+    "prefix": "fgp_module_entity",
+    "body": [
+      "import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';",
+      "",
+      "@Entity()",
+      "export class EntityName {",
+      "  @PrimaryGeneratedColumn()",
+      "  id: number;",
+      "",
+      "  @Column()",
+      "  name: string;",
+      "",
+      "  @Column({ nullable: true })",
+      "  description?: string;",
+      "",
+      "  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })",
+      "  createdAt: Date;",
+      "}"
+    ],
+    "description": "fgp_module_entity snippet"
+  },
+  "fgp_module_routes": {
+    "prefix": "fgp_module_routes",
     "body": [
       "import { Router } from 'express';",
       "const router = Router();",
@@ -115,10 +115,10 @@
       "",
       "export default router;"
     ],
-    "description": "fgp_entity_routes snippet"
+    "description": "fgp_module_routes snippet"
   },
-  "fgp_entity_service": {
-    "prefix": "fgp_entity_service",
+  "fgp_module_service": {
+    "prefix": "fgp_module_service",
     "body": [
       "class $1Service {",
       "  findAll(): any[] {",
@@ -147,10 +147,10 @@
       "",
       "export default new $1Service();"
     ],
-    "description": "fgp_entity_service snippet"
+    "description": "fgp_module_service snippet"
   },
-  "fgp_entity_service_typeorm": {
-    "prefix": "fgp_entity_service_typeorm",
+  "fgp_module_service_typeorm": {
+    "prefix": "fgp_module_service_typeorm",
     "body": [
       "import { Repository } from \"typeorm\";",
       "import { InjectRepository } from \"@nestjs/typeorm\";",
@@ -187,7 +187,7 @@
       "  }",
       "}"
     ],
-    "description": "fgp_entity_service_typeorm snippet"
+    "description": "fgp_module_service_typeorm snippet"
   },
   "fgp_rn_usePushNotifications": {
     "prefix": "fgp_rn_usePushNotifications",

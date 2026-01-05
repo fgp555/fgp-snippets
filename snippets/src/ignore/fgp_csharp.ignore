@@ -1,0 +1,61 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache
+.vs/
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# ==============================
+# Logs
+# ==============================
+*.log
+
+# ==============================
+# ASP.NET Core
+# ==============================
+
+# Development certificates
+*.pfx
+
+# App settings (secrets)
+appsettings.Development.json
+appsettings.Local.json
+
+# ==============================
+# Environment files
+# ==============================
+.env
+.env.*
+
+# ==============================
+# OS files
+# ==============================
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Test results
+# ==============================
+TestResults/
+
+# ==============================
+# Publish output
+# ==============================
+publish/

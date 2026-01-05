@@ -11,7 +11,7 @@ npm install -g vsce
 # https://dev.azure.com/frankgp/_usersSettings/tokens
 vsce login frankgp
 
-npm version patch
+# npm version patch
 npm run build
 vsce package
 vsce publish

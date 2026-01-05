@@ -11,7 +11,6 @@ if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 const extensionsMap = {
   css: [".css"],
   dart: [".dart"],
-  // docker: [".dockerfile", ".yml", ".yaml", ".dockerignore"], // 👈 nuevo
   html: [".html"],
   http: [".http"],
   ignore: [".ignore"],
@@ -24,6 +23,7 @@ const extensionsMap = {
   sql: [".sql"],
   typescript: [".ts"],
   typescriptreact: [".tsx"],
+  csharp: [".cs", ".csx"], // ← agregado
 };
 
 function toSnippetObject(filename, content) {

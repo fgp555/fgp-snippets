@@ -1,0 +1,90 @@
+using System.Diagnostics;
+using UserModel.Models;
+
+var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build();
+
+app.Use(async (context, next) =>
+{
+    var sw = Stopwatch.StartNew();
+    await next();
+    sw.Stop();
+
+    Console.WriteLine(
+        $"{context.Request.Method} {context.Request.Path}" +
+        $"{context.Response.StatusCode} {sw.ElapsedMilliseconds}ms"
+    );
+});
+
+var usersMock = new List<User>
+{
+    new User(1, "Alice", "alice@example.com"),
+    new User(2, "Bob", "bob@example.com")
+};
+
+
+app.MapGet("/", () => "Hello World!");
+
+// GET: listar usuarios
+app.MapGet("/api/users", () => usersMock);
+
+app.MapGet("/api/users2", () =>
+{
+    return Results.Ok(usersMock);
+
+});
+
+app.MapGet("/api/users3", async context =>
+{
+    context.Response.StatusCode = 200;
+    await context.Response.WriteAsJsonAsync(usersMock);
+});
+
+// GET: usuario por id
+app.MapGet("/api/users/{id:int}", (int id) =>
+{
+    var user = usersMock.FirstOrDefault(u => u.Id == id);
+    return user is not null ? Results.Ok(user) : Results.NotFound();
+});
+
+// POST: crear usuario
+app.MapPost("/api/users", (User newUser) =>
+{
+    var nextId = usersMock.Max(u => u.Id) + 1;
+    var user = new User(nextId, newUser.Name, newUser.Email);
+    usersMock.Add(user);
+    return Results.Created($"/api/users/{user.Id}", user);
+});
+
+app.MapPut("/api/users/{id:int}",(int id, User updateUser) =>
+{
+    var index = usersMock.FindIndex(u => u.Id == id);
+    if(index == -1)
+        return Results.NotFound();
+
+    usersMock[index] = new User(id, updateUser.Name, updateUser.Email);
+    return Results.Ok(usersMock[index]);
+});
+
+// DELETE: eliminar usuario
+app.MapDelete("/api/users/{id:int}", (int id) =>
+{
+    var user = usersMock.FirstOrDefault(u => u.Id == id);
+    Console.WriteLine(id);
+    Console.WriteLine(user);
+    if(user is null)
+        return Results.NotFound();
+    usersMock.Remove(user);
+    return Results.NoContent();
+});
+
+app.Run();
+
+
+/* 
+// /Models/UserModel.cs
+
+namespace UserModel.Models;
+public record User(int Id, string Name, string Email);
+
+ */

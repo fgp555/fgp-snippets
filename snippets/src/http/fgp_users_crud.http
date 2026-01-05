@@ -1,0 +1,26 @@
+### CREATE USER
+POST http://localhost:${1:3000}/users
+Content-Type: application/json
+
+{
+  "name": "User123",
+  "email": "user123@test.com"
+}
+
+### READ ALL USERS
+GET http://localhost:${1:3000}/users
+
+### READ ONE USER
+GET http://localhost:${1:3000}/users/1
+
+### UPDATE USER
+PUT http://localhost:${1:3000}/users/1
+Content-Type: application/json
+
+{
+  "name": "User123 update",
+  "email": "user123update@test.com"
+}
+
+### DELETE USER
+DELETE http://localhost:${1:3000}/users/1
