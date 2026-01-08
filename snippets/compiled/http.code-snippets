@@ -1,4 +1,28 @@
 {
+  "fgp_basic": {
+    "prefix": "fgp_basic",
+    "body": [
+      "@token={{\\$dotenv TOKEN}}",
+      "",
+      "### GET",
+      "GET http://localhost:3000",
+      "",
+      "### POST",
+      "POST https://jsonplaceholder.typicode.com/users",
+      "Content-Type: application/json",
+      "",
+      "{",
+      "    // .env Variables",
+      "    \"dotenv_TOKEN\": \"{{\\$dotenv TOKEN}}\",",
+      "    // System Variables",
+      "    \"processEnv_TOKEN\": \"{{\\$processEnv TOKEN}}\"",
+      "}",
+      "",
+      "### GET",
+      "GET https://jsonplaceholder.typicode.com/users"
+    ],
+    "description": "fgp_basic snippet"
+  },
   "fgp_files_upload": {
     "prefix": "fgp_files_upload",
     "body": [
@@ -48,30 +72,6 @@
       "------WebKitFormBoundary--"
     ],
     "description": "fgp_files_upload snippet"
-  },
-  "fgp_hello": {
-    "prefix": "fgp_hello",
-    "body": [
-      "@token={{\\$dotenv TOKEN}}",
-      "",
-      "### GET",
-      "GET http://localhost:3000",
-      "",
-      "### POST",
-      "POST https://jsonplaceholder.typicode.com/users",
-      "Content-Type: application/json",
-      "",
-      "{",
-      "    // .env Variables",
-      "    \"dotenv_TOKEN\": \"{{\\$dotenv TOKEN}}\",",
-      "    // System Variables",
-      "    \"processEnv_TOKEN\": \"{{\\$processEnv TOKEN}}\"",
-      "}",
-      "",
-      "### GET",
-      "GET https://jsonplaceholder.typicode.com/users"
-    ],
-    "description": "fgp_hello snippet"
   },
   "fgp_users_crud": {
     "prefix": "fgp_users_crud",
