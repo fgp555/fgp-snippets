@@ -23,15 +23,28 @@ const extensionsMap = {
   sql: [".sql"],
   typescript: [".ts"],
   typescriptreact: [".tsx"],
-  csharp: [".cs", ".csx"], // ← agregado
+  csharp: [".cs", ".csx"],
+  json: [".json"],
 };
 
 function toSnippetObject(filename, content) {
   const name = path.basename(filename, path.extname(filename));
+
+  let body;
+
+  try {
+    // Si es JSON válido → lo formatea bonito
+    const parsed = JSON.parse(content);
+    body = JSON.stringify(parsed, null, 2).split("\n");
+  } catch {
+    // Si no es JSON válido → texto plano
+    body = content.split(/\r?\n/);
+  }
+
   return {
     [name]: {
       prefix: name,
-      body: content.split(/\r?\n/),
+      body,
       description: `${name} snippet`,
     },
   };
@@ -67,11 +80,15 @@ Object.entries(extensionsMap).forEach(([lang, exts]) => {
 // También copia directamente cualquier .json o .code-snippets suelto en src
 const copyLooseSnippets = () => {
   const looseFiles = fs.readdirSync(srcDir);
+
   looseFiles.forEach((file) => {
     const ext = path.extname(file);
-    if (ext === ".json" || ext === ".code-snippets") {
+
+    // ❗ Solo copiar .code-snippets (no JSON ya procesado)
+    if (ext === ".code-snippets") {
       const srcFile = path.join(srcDir, file);
       const dstFile = path.join(outDir, file);
+
       fs.copyFileSync(srcFile, dstFile);
       console.log(`📦 Copiado: ${file}`);
     }

@@ -1,5 +1,5 @@
 {
-  "version": "2026.1.7",
+  "version": "2026.5.8",
   "name": "frankgp",
   "publisher": "frankgp",
   "displayName": ".FGP Snippets by Frank GP",
@@ -48,6 +48,10 @@
       {
         "language": "javascriptreact",
         "path": "./snippets/compiled/javascriptreact.code-snippets"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/compiled/json.code-snippets"
       },
       {
         "language": "markdown",

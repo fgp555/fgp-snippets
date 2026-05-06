@@ -551,13 +551,6 @@
     ],
     "description": "fgp_picoCSS_template snippet"
   },
-  "fgp_Poster": {
-    "prefix": "fgp_Poster",
-    "body": [
-      "<meta property=\"og:image\" content=\"https://i.postimg.cc/fbwLF9Ft/fb-cover-vscode-shortcode.webp\" />"
-    ],
-    "description": "fgp_Poster snippet"
-  },
   "fgp_redirect": {
     "prefix": "fgp_redirect",
     "body": [

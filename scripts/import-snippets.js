@@ -17,10 +17,18 @@ if (!fs.existsSync(compiledDir)) {
 const files = fs.readdirSync(compiledDir);
 const snippets = [];
 
+const languageMapOverride = {
+  package: "json",
+  tsconfig: "json",
+};
+
 files.forEach((file) => {
   const ext = path.extname(file);
   if (ext === ".code-snippets" || ext === ".json") {
-    const language = path.basename(file, ext);
+    const base = path.basename(file, ext);
+
+    const language = languageMapOverride[base] || base;
+
     snippets.push({
       language,
       path: `./snippets/compiled/${file}`, // 🛠 Ruta que VS Code entiende

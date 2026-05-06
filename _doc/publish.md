@@ -6,16 +6,16 @@ To publish your extension to the Visual Studio Marketplace, you need to follow t
 
 ```sh
 npm install -g vsce
-
+vsce --version
 # https://marketplace.visualstudio.com/manage/publishers
 # https://dev.azure.com/frankgp/_usersSettings/tokens
 vsce login frankgp
+vsce ls-publishers
 
-# npm version patch
+
+# npm version patch in package.json
 npm run build
-vsce package
-vsce publish
-
+vsce package && vsce publish
 ```
 
 ```tsx
