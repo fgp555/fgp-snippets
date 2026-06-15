@@ -53,15 +53,15 @@ export default function GoogleAuthTest() {
       await GoogleSignin.hasPlayServices();
 
       const res = await GoogleSignin.signIn();
+      console.log(res);
       addLog(res);
-
       addLog("✅ Sign in completed");
     } catch (err: any) {
+      console.log(err);
       const parsedError = {
         message: err?.message,
         code: err?.code,
       };
-
       addLog("❌ Error");
       addLog(parsedError);
     }
