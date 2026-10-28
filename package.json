@@ -21,6 +21,10 @@
       {
         "command": "frankgp.openInExternalTerminal",
         "title": "Open in External Terminal"
+      },
+      {
+        "command": "frankgp.openInExternalGitBash",
+        "title": "Open in External Git Bash"
       }
     ],
     "menus": {
@@ -29,6 +33,11 @@
           "command": "frankgp.openInExternalTerminal",
           "when": "explorerResourceIsFolder",
           "group": "navigation@99"
+        },
+        {
+          "command": "frankgp.openInExternalGitBash",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@100"
         }
       ]
     },

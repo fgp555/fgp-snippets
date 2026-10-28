@@ -38,6 +38,16 @@ function openExternalTerminal(folderPath) {
   launch("x-terminal-emulator", ["-e", "sh", "-lc", shellCommand, "sh", folderPath]);
 }
 
+function openExternalGitBash(folderPath) {
+  if (process.platform !== "win32") {
+    vscode.window.showErrorMessage("Open in External Git Bash is currently available only on Windows.");
+    return;
+  }
+
+  const gitBashLauncher = "C:\\Program Files\\Git\\git-bash.exe";
+  launch(gitBashLauncher, [`--cd=${folderPath}`]);
+}
+
 function activate(context) {
   const command = vscode.commands.registerCommand(
     "frankgp.openInExternalTerminal",
@@ -51,6 +61,19 @@ function activate(context) {
     }
   );
   context.subscriptions.push(command);
+
+  const gitBashCommand = vscode.commands.registerCommand(
+    "frankgp.openInExternalGitBash",
+    (resource) => {
+      const folderPath = resource?.fsPath;
+      if (!folderPath) {
+        vscode.window.showErrorMessage("Select a folder to open an external Git Bash terminal.");
+        return;
+      }
+      openExternalGitBash(path.resolve(folderPath));
+    }
+  );
+  context.subscriptions.push(gitBashCommand);
 }
 
 function deactivate() {}
