@@ -1,6 +1,8 @@
 # Publish to Visual Studio Marketplace
 
 ```sh
+# Presiona F5. para probarlo en local.
+
 npm install -g vsce
 vsce --version
 
