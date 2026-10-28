@@ -7,6 +7,7 @@
   "engines": {
     "vscode": "^1.95.0"
   },
+  "main": "./extension.js",
   "scripts": {
     "compile": "node scripts/compile-snippets.js",
     "import": "node scripts/import-snippets.js",
@@ -16,6 +17,21 @@
     "Snippets"
   ],
   "contributes": {
+    "commands": [
+      {
+        "command": "frankgp.openInExternalTerminal",
+        "title": "Open in External Terminal"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "frankgp.openInExternalTerminal",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@99"
+        }
+      ]
+    },
     "snippets": [
       {
         "language": "csharp",
