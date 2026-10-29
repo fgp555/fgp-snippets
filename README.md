@@ -3,7 +3,7 @@
 Esta es una extensión que proporciona varios snippets personalizados.
 
 Plugin de Snippets para VSCode
-https://fgp.one
+https://frankgp.com
 
 despues de instalar la extensión, en un archivo .jsx escribe: `fgp_` y se genera el codigo para un todo list,
 con el tiempo ire actualizando con mas snippets.

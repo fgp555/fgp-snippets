@@ -7,11 +7,11 @@ npm install -g vsce
 vsce --version
 
 # https://dev.azure.com/frankgp/_usersSettings/tokens
-vsce login frankgp
 vsce ls-publishers
+vsce login frankgp
 
 # npm version patch --no-git-tag-version
-npm version 2026.8.16 --no-git-tag-version
+npm version 2026.10.28 --no-git-tag-version
 npm run build
 vsce package
 vsce publish

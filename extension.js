@@ -49,6 +49,23 @@ function openExternalGitBash(folderPath) {
 }
 
 function activate(context) {
+  const integratedTerminalCommand = vscode.commands.registerCommand(
+    "frankgp.openInIntegratedTerminal",
+    (resource) => {
+      const folderPath = resource?.fsPath;
+      if (!folderPath) {
+        vscode.window.showErrorMessage("Select a folder to open an integrated terminal.");
+        return;
+      }
+
+      const terminal = vscode.window.createTerminal({
+        cwd: path.resolve(folderPath),
+      });
+      terminal.show();
+    }
+  );
+  context.subscriptions.push(integratedTerminalCommand);
+
   const command = vscode.commands.registerCommand(
     "frankgp.openInExternalTerminal",
     (resource) => {

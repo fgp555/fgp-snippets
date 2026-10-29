@@ -1,5 +1,5 @@
 {
-  "version": "2026.8.16",
+  "version": "2026.10.31",
   "name": "frankgp",
   "publisher": "frankgp",
   "displayName": ".FGP Snippets by Frank GP",
@@ -7,6 +7,9 @@
   "engines": {
     "vscode": "^1.95.0"
   },
+  "activationEvents": [
+    "onCommand:frankgp.openInIntegratedTerminal"
+  ],
   "main": "./extension.js",
   "scripts": {
     "compile": "node scripts/compile-snippets.js",
@@ -20,11 +23,11 @@
     "commands": [
       {
         "command": "frankgp.openInExternalTerminal",
-        "title": "Open in External Terminal"
+        "title": "Open in External PowerShell"
       },
       {
-        "command": "frankgp.openInExternalGitBash",
-        "title": "Open in External Git Bash"
+        "command": "frankgp.openInIntegratedTerminal",
+        "title": "Open in Integrated Terminal"
       }
     ],
     "menus": {
@@ -32,12 +35,12 @@
         {
           "command": "frankgp.openInExternalTerminal",
           "when": "explorerResourceIsFolder",
-          "group": "navigation@99"
+          "group": "navigation@98"
         },
         {
-          "command": "frankgp.openInExternalGitBash",
+          "command": "frankgp.openInIntegratedTerminal",
           "when": "explorerResourceIsFolder",
-          "group": "navigation@100"
+          "group": "navigation@99"
         }
       ]
     },

@@ -1,0 +1,133 @@
+# configuracion con 3 menu contextual
+
+```json
+
+{
+  "version": "2026.10.28",
+  "name": "frankgp",
+  "publisher": "frankgp",
+  "displayName": ".FGP Snippets by Frank GP",
+  "description": "Custom snippets created by Frank GP (fgp)",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "activationEvents": [
+    "onCommand:frankgp.openInIntegratedTerminal"
+  ],
+  "main": "./extension.js",
+  "scripts": {
+    "compile": "node scripts/compile-snippets.js",
+    "import": "node scripts/import-snippets.js",
+    "build": "npm run compile && npm run import"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "frankgp.openInIntegratedTerminal",
+        "title": "Open in Integrated Terminal"
+      },
+      {
+        "command": "frankgp.openInExternalTerminal",
+        "title": "Open in External Terminal"
+      },
+      {
+        "command": "frankgp.openInExternalGitBash",
+        "title": "Open in External Git Bash"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "frankgp.openInIntegratedTerminal",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@98"
+        },
+        {
+          "command": "frankgp.openInExternalTerminal",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@99"
+        },
+        {
+          "command": "frankgp.openInExternalGitBash",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@100"
+        }
+      ]
+    },
+    "snippets": [
+      {
+        "language": "csharp",
+        "path": "./snippets/compiled/csharp.code-snippets"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/compiled/css.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/compiled/dart.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/compiled/html.code-snippets"
+      },
+      {
+        "language": "http",
+        "path": "./snippets/compiled/http.code-snippets"
+      },
+      {
+        "language": "ignore",
+        "path": "./snippets/compiled/ignore.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/compiled/javascript.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/compiled/javascriptreact.code-snippets"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/compiled/json.code-snippets"
+      },
+      {
+        "language": "markdown",
+        "path": "./snippets/compiled/markdown.code-snippets"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/compiled/python.code-snippets"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/compiled/scss.code-snippets"
+      },
+      {
+        "language": "sql",
+        "path": "./snippets/compiled/sql.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/compiled/typescript.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/compiled/typescriptreact.code-snippets"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fgp555/vscode-extensions"
+  },
+  "homepage": "https://marketplace.visualstudio.com/items?itemName=frankgp.frankgp",
+  "feature": {
+    "details": "feature.md"
+  },
+  "icon": "images/logo.png"
+}
+```
